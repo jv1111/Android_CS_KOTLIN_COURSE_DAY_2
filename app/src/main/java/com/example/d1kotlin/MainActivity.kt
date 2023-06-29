@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         val driver = Driver("MR.D");
         driver.showDetails();
 
+        val myCar = MyCar();
+        myCar.start();
+
     }
 
     override fun onDestroy() {

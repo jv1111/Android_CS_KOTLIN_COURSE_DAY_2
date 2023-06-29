@@ -9,6 +9,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.i("MYTAG","Main activity on create");
+
+        val car = Car();//reference variable (object/instance)
+        car.start();
+
+        val driver = Driver("MR.D");
+        driver.showDetails();
+
     }
 
     override fun onDestroy() {
